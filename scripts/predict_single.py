@@ -59,4 +59,14 @@ for k, v in person.items():
     print(f"  {k:<10}: {v}")
 print("───────────────────────────────────────────")
 print(f"  Predicted Annual Charges: ${prediction:,.2f}")
+
+# Simple risk interpretation
+if prediction < 8000:
+    risk = "Low 🟢"
+elif prediction < 16000:
+    risk = "Moderate 🟡"
+else:
+    risk = "High 🔴"
+
+print(f"  Risk Level              : {risk}")
 print("───────────────────────────────────────────\n")
