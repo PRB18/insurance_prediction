@@ -31,3 +31,16 @@ Source: [Keith Galli's Regression Example](https://github.com/KeithGalli/Regress
 - `bmi` values were standardised to 2 decimal places during cleaning
 - Rows with missing `charges` were dropped
 - Text columns were lowercased before encoding
+
+## Dataset Statistics (approximate)
+
+| Column | Min | Max | Mean |
+|--------|-----|-----|------|
+| age | 18 | 64 | 39 |
+| bmi | 15.96 | 53.13 | 30.66 |
+| children | 0 | 5 | 1.09 |
+| charges | $1,122 | $63,770 | $13,270 |
+
+- Total rows: ~1,338
+- ~20% of policyholders are smokers
+- Charges are right-skewed — a small group pays significantly more
