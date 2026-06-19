@@ -30,3 +30,12 @@ Based on coefficient magnitudes after encoding:
 - Try **Ridge / Lasso** regression to penalise large coefficients
 - Try **Random Forest Regressor** to capture non-linear relationships
 - Apply **log transformation** to the target variable to reduce skew
+
+## Evaluation Methodology
+
+- **Split**: 80% train / 20% test (`random_state=42` for reproducibility)
+- **Metrics used**:
+  - **R²** — proportion of variance explained (closer to 1 is better)
+  - **MAE** — average absolute prediction error in USD
+  - **MSE** — penalises large errors more than MAE
+- No cross-validation applied yet — a good next improvement
