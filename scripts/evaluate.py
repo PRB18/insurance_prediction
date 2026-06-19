@@ -52,3 +52,9 @@ coef_df = pd.DataFrame({
 
 print("\nFeature Coefficients:")
 print(coef_df.to_string(index=False))
+
+# Sample predictions vs actuals
+results = pd.DataFrame({"Actual": y_test, "Predicted": y_pred.round(2)})
+results["Error"] = (results["Predicted"] - results["Actual"]).round(2)
+print("\nSample Predictions (first 5 rows):")
+print(results.head().to_string(index=False))
