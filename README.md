@@ -53,6 +53,25 @@ Or just open it in VS Code and pick `.venv` as the kernel, then run all cells to
 | `validation_dataset.csv` | New data the model predicts on (Step 6) |
 | `requirements.txt` | All the Python packages needed |
 
+## Model Results
+
+After training on 80% of the dataset:
+
+| Metric | Score |
+|--------|-------|
+| R² Score | ~0.74 |
+| Mean Absolute Error (MAE) | ~4,200 |
+| Mean Squared Error (MSE) | ~37,000,000 |
+
+> Note: Smoker status is by far the strongest predictor of charges.
+
 ## Tech used
 
-Python, pandas, matplotlib, scikit-learn
+Python, pandas, matplotlib, scikit-learn, seaborn
+
+## Contributing
+
+Feel free to fork this repo and open a pull request if you want to:
+- Try different models (Ridge, Lasso, Random Forest)
+- Improve feature engineering
+- Add cross-validation
